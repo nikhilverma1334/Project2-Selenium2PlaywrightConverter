@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blast Converter | Selenium to Playwright</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+
+<body>
+    <div class="background-blur"></div>
+
+    <nav>
+        <div class="logo">
+            <span class="logo-icon">🚀</span>
+            <span class="logo-text">BLAST<span>CONVERTER</span></span>
+        </div>
+        <div class="status">
+            <span class="status-dot"></span>
+            Model:
+            <select id="model-select">
+                <option value="codellama">codellama</option>
+            </select>
+        </div>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Migrate to <span>Playwright</span> Instantly</h1>
+            <p>Convert your TestNG Selenium Java tests to modern Playwright JS/TS using local LLM power.</p>
+        </header>
+
+        <section class="editor-container">
+            <div class="pane input-pane">
+                <div class="pane-header">
+                    <span>SELENIUM JAVA</span>
+                    <button id="clear-btn">Clear</button>
+                </div>
+                <div class="editor-wrapper">
+                    <textarea id="java-input" placeholder="Paste your Selenium Java code here..."></textarea>
+                </div>
+            </div>
+
+            <div class="action-bar">
+                <button id="convert-btn">
+                    <span class="btn-text">CONVERT</span>
+                    <div class="spinner hidden"></div>
+                </button>
+            </div>
+
+            <div class="pane output-pane">
+                <div class="pane-header">
+                    <span>PLAYWRIGHT JS/TS</span>
+                    <button id="copy-btn">Copy</button>
+                </div>
+                <div class="editor-wrapper">
+                    <pre><code id="ts-output" class="language-typescript">// Converted code will appear here...</code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built with B.L.A.S.T Protocol & Antigravity</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
